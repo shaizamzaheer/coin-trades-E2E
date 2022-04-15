@@ -14,6 +14,7 @@ import ssl
 
 
 def get_exchange_data(start: str) -> List[Dict[str, Any]]:
+    """gets up to the last 5 days of data from bitcoincharts"""
     url = (
         f" http://api.bitcoincharts.com/v1/trades.csv?symbol=bitstampUSD&start={start}"
     )
@@ -32,7 +33,8 @@ def get_exchange_data(start: str) -> List[Dict[str, Any]]:
 
 
 def download_file(url):
-    out_file = "checksize"
+    """gets the entire history of the data"""
+    out_file = "checksize.csv"
 
     # Download archive
     try:

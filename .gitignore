@@ -1,2 +1,4 @@
 twitter_keys.yml
-coinapp/checksize
+checksize.csv
+checksize.parquet
+
