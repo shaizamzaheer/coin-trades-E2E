@@ -2,3 +2,5 @@ twitter_keys.yml
 checksize.csv
 checksize.parquet
 
+.env
+small.txt
